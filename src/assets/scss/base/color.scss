@@ -1,0 +1,14 @@
+:root {
+  --vt-c-white: #ffffff;
+  --vt-c-black: #181818;
+}
+
+:root {
+  --color-background: var(--vt-c-white);
+
+  --color-border: var(--vt-c-black);
+  --color-border-hover: var(--vt-c-black);
+
+  --color-text: var(--vt-c-black);
+}
+
