@@ -1,12 +1,19 @@
 <script lang="ts" setup>
  import {useUserStore} from "@/stores/user";
+ import Header from "@/components/Header.vue";
+ import Table from "@/components/Table.vue";
+
 
  const userStore = useUserStore()
+
+ void userStore.fetchUsers()
+
+ console.log(", ", userStore)
+
 </script>
 
 <template>
-  <div class="">
+    <Header />
 
-    {{ userStore.users }}
-  </div>
+    <Table :users="userStore.usersExtended"/>
 </template>

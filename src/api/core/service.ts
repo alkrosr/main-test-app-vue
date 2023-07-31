@@ -16,17 +16,6 @@ export class Service {
         }
     }
 
-    public async item(id: number):Promise<any> {
-        try {
-            return await fetchRequest({
-                point: `${this.endpoint}/${id}`,
-                fetchMethod: "GET"
-            })
-        } catch (e) {
-            console.log("Service GET item ERROR => ", e.message)
-        }
-    }
-
     public async create(payload: Record<string, any>):Promise<any> {
         try {
             return await fetchRequest({
